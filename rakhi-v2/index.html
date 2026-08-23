@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Raksha Bandhan!</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#3D1660">
+</head>
+<body>
+
+<div class="dot-nav" id="dotNav"></div>
+
+<!-- PAGE 1: HERO / PULL THE THREAD -->
+<section class="page active" data-page="0" id="page-hero">
+  <span class="eyebrow">Raksha Bandhan</span>
+  <h1>Happy Raksha Bandhan,<br><span id="brotherNameHero">Brother</span>!</h1>
+  <div class="from">From your sister, <span id="senderNameHero">Sister</span></div>
+
+  <div class="thread-pull-zone" id="threadZone">
+    <div class="thread-track">
+      <div class="thread-line" id="threadLine"></div>
+      <div class="rakhi-spin" id="rakhiSpin">🌸</div>
+      <div class="thread-handle" id="threadHandle">🧵</div>
+    </div>
+    <div class="pull-label" id="pullLabel">Pull the thread to begin</div>
+  </div>
+</section>
+
+<!-- PAGE 2: NOTE / ENVELOPE -->
+<section class="page" data-page="1" id="page-note">
+  <h2>A little note for you 💌</h2>
+  <div class="envelope">
+<div class="envelope-closed" id="envelopeClosed">
+  <img src="assets/images/envelope.png" alt="envelope" class="envelope-img">
+</div>
+    <div class="letter-full" id="letterFull">
+      <p class="msg-text" id="msgText">Every year this thread reminds us how far we've come and how much we still have each other. Thank you for always having my back. Happy Raksha Bandhan!</p>
+    </div>
+  </div>
+  <button class="action-btn" id="openLetterBtn">📩 Open my letter</button>
+  <button class="action-btn hidden" id="nextNoteBtn">Next →</button>
+</section>
+
+<!-- PAGE 3: MEMORY LANE / PHOTO ALBUM -->
+<section class="page" data-page="2" id="page-memory">
+  <h2>Memory lane 📸</h2>
+  <div class="memory-hero"><img src="assets/images/picture.png" alt=""></div>
+  <div class="album-instructions" id="albumInstructions">Drag the photos into the album</div>
+  <div class="album-board">
+    <div class="album-slots" id="albumSlots"></div>
+    <div class="photo-tray" id="photoTray"></div>
+  </div>
+</section>
+
+<!-- PAGE 4: REASONS / FLIP CARDS -->
+<section class="page" data-page="3" id="page-reasons">
+  <h2 id="reasonsHeading">Find the hidden heart 💜</h2>
+  <div class="reasons-instructions" id="reasonsInstructions">
+  Some memories are hiding here... find the hidden heart 💜
+</div>
+  <div class="flip-grid" id="flipGrid"></div>
+  <div class="gift-reveal" id="giftReveal">
+    <div class="surprise-text">🎁 Surprise unlocked!</div>
+    <button class="gift-box" id="giftBoxReasons" title="Open it">
+  <img src="assets/images/giftbox.png" alt="gift box" class="gift-box-img">
+</button>
+  </div>
+</section>
+
+<!-- PAGE 5: RAKHI TYING -->
+<section class="page" data-page="4" id="page-rakhi">
+  <h2>Tie the rakhi 🪢</h2>
+  <div class="rakhi-instructions" id="rakhiInstructions">Pick up the Rakhi, Tie it and activate brother duties.”</div>
+  <div class="wrist-scene" id="wristScene">
+
+<div class="wrist-drop" id="wristDrop">
+  <img src="assets/images/hand2.png" alt="wrist" class="wrist-img">
+  <img src="assets/images/hand.png" alt="" class="wrist-img wrist-tied-img" id="wristTiedImg">
+</div>
+<div class="rakhi-draggable" id="rakhiDrag">
+  <img src="assets/images/rakhi.png" alt="rakhi" class="rakhi-drag-img">
+</div>
+
+  </div>
+  <div class="tie-success" id="tieSuccess">✨ Rakhi tied successfully</div>
+  <button class="action-btn hidden" id="continueAfterTie">Continue →</button>
+</section>
+
+<!-- PAGE 6: CLOSING / GIFT BOX -->
+<section class="page" data-page="5" id="page-closing">
+  <h2>One last thing 🎁</h2>
+
+  <div class="gift-scene">
+  <button class="gift-box big" id="giftBoxFinal" title="Tap to open your gift">
+    <img src="assets/images/giftbox.png" alt="gift box" class="gift-box-img">
+  </button>
+  <img src="assets/images/laddu.png" alt="laddu" class="laddu-pop" id="ladduPop">
+</div>
+<div class="tap-hint" id="tapHint">Tap to open your gift</div>
+
+  <div class="closing-message hidden" id="closingMessageWrap">
+    <p class="msg-text" id="closingText">Stay awesome, stay you. Sending you all my love this Raksha Bandhan.</p>
+    <div class="sign-off" id="signOff">— Your sister, forever in your corner 💜</div>
+    <div class="share-row">
+      <button id="copyWishBtn">Copy wish</button>
+      <button id="restartBtn">Start again</button>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
